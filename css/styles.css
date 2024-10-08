@@ -1,0 +1,38 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h2, h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-top: 100px; /* Compensar altura de header en pantallas grandes */
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    margin-top: 70px; /* Compensar altura de la barra superior en pantallas pequeñas */
+  }
+}
+
+/* Animación de zoom para la imagen de fondo */
+@keyframes zoomBackground {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Zoom suave del 10% */
+  }
+  100% {
+    transform: scale(1); /* Regresar al estado original */
+  }
+}
+
+.hero-bg {
+  animation: zoomBackground 20s ease-in-out infinite;
+}
+
+
+ 
